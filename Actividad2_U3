@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Imagen desde Internet"),
+        ),
+        body: ListView(
+           children: <Widget>[
+                // Load image from network
+             Image.network(
+                 'https://cdn02.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/CI_NSwitch_CompareBundles_PackshotSmashBros.jpg'),
+             new ListTile(title: Text('Nintendo Switch')),
+             Image.network(
+                 'https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2964072.jpg'),
+             new ListTile(title: Text('Nintendo Switch Lite')),
+             Image.network(
+                 'https://compass-ssl.xbox.com/assets/70/c3/70c33d60-cd4f-403d-b0d9-385bea3a2a4f.jpg?n=X1X_Content-Placement-0_FH4_740x417.jpg'),
+             new ListTile(title: Text('Xbox One X')),
+             Image.network(
+                 'https://cdn1.coppel.com/images/catalog/pm/2385513-2.jpg'),
+             new ListTile(title: Text('Xbox One S')),
+             Image.network(
+                 'https://http2.mlstatic.com/consola-xbox-360-e-super-slim-500gb-sellada-nueva-y-envio-D_NQ_NP_665911-MLM31906235734_082019-F.jpg'),
+             new ListTile(title: Text('Xbox 360')),
+             Image.network(
+                 'https://www.bhphotovideo.com/images/images1000x1000/sony_3004132_ps4_1tb_3_game_bundle_1510022.jpg'),
+             new ListTile(title: Text('PlayStation 4')),
+             Image.network(
+                 'https://mx.static.webuy.com/product_images/Juegos/PS3%20Consolas/SPS3250SEB001_l.jpg'),
+             new ListTile(title: Text('PlayStation 3')),
+             Image.network(
+                 'https://images-na.ssl-images-amazon.com/images/I/61E5FfTLe-L._AC_SX522_.jpg'),
+             new ListTile(title: Text('PlayStation 3 Slim')),
+             Image.network(
+                 'https://http2.mlstatic.com/playstation-2-slim-100-nuevo-original-sin-chipiar-D_NQ_NP_826022-MLV31251313108_062019-Q.jpg'),
+             new ListTile(title: Text('PlayStation 2')),
+             Image.network(
+                 'https://intermediary-i.linio.com/p/cb796f2b8bcc335049f0aca3f915c3ff-zoom.jpg'),
+             new ListTile(title: Text('PlayStation One')),
+              ],
+            )),
+    );
+  }
+}
